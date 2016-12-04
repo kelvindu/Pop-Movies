@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie_cardview"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="185dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/test_poster"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/poster"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:fontFamily="sans-serif"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stranger Man"/>
+            <TextView
+                android:id="@+id/dt"
+                android:fontFamily="helvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11-12-2015"/>
+            <TextView
+                android:id="@+id/ov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="helvetica"
+                android:textSize="16sp"
+                android:maxLines="6"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+        </LinearLayout>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/for_more_info"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
